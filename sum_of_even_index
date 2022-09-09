@@ -1,0 +1,13 @@
+new_lst = [4, 3, 0, 7, 10, 6, 5]
+l = len(new_lst)
+sum = 0
+for i in range(l):
+    if new_lst[i] % 2 == 0:
+        sum = new_lst[i] + sum
+        print("even element: " + str(new_lst[i]))
+
+print('last element: ' + str(new_lst[-1]))
+result = sum * new_lst[-1]
+
+print("Result: " + str(result))
+
