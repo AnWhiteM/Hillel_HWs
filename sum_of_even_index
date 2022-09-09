@@ -1,4 +1,7 @@
-new_lst = [4, 3, 0, 7, 10, 6, 5]
+import random
+
+new_lst = random.sample(range(0, 10), 4)
+print(new_lst)
 l = len(new_lst)
 sum = 0
 for i in range(l):
@@ -10,4 +13,3 @@ print('last element: ' + str(new_lst[-1]))
 result = sum * new_lst[-1]
 
 print("Result: " + str(result))
-
