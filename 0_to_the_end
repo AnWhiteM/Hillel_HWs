@@ -1,0 +1,16 @@
+import random
+
+# new_lst = random.sample(range(0, 5), 5)
+# print(new_lst) 
+
+
+new_lst = [9, 0, 7, 31, 0, 45, 0, 45, 0, 45, 0, 0, 96, 0]
+print(new_lst)
+
+l = len(new_lst)
+c = 0
+for i in range(l):
+    if new_lst[i] != 0:
+        new_lst[c], new_lst[i] = new_lst[i], new_lst[c]
+        c += 1
+print(new_lst)
