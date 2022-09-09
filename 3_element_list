@@ -1,3 +1,5 @@
-new_lst = [5, 4, 3, 2, 8, 9]
+import random
+new_lst = random.sample(range(0, 10), 10)
+print(new_lst)
 new_lst = new_lst[:1] + new_lst[2:3] + new_lst[-2:-1]
 print(new_lst)
