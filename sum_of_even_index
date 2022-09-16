@@ -2,14 +2,21 @@ import random
 
 new_lst = random.sample(range(0, 10), 4)
 print(new_lst)
-l = len(new_lst)
+ln = len(new_lst)
+evens = new_lst[0::2]
 sum = 0
-for i in range(l):
-    if new_lst[i] % 2 == 0:
-        sum = new_lst[i] + sum
-        print("even element: " + str(new_lst[i]))
+if ln != 0:
 
-print('last element: ' + str(new_lst[-1]))
-result = sum * new_lst[-1]
+     for i in evens:
+        sum = i + sum
+        print("even element: " + str(i))
 
-print("Result: " + str(result))
+        print('last element: ' + str(new_lst[-1]))
+        result = sum * new_lst[-1]
+        print("Result: " + str(result))
+
+else:
+    print("Result: 0" )
+
+
+# Интерфейс программы немного кривой, но в принципе она работает
