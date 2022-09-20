@@ -1,0 +1,31 @@
+from keyword import iskeyword
+
+# _ => True
+#
+# x => True
+#
+# get_value => True
+#
+# some_super_puper_value => True
+#
+# Get_value => False
+#
+# get_Value => False
+#
+# getValue => False
+#
+# 3m => False
+
+while True:
+    name = input("Please input variable name: ")
+
+    if name == "break":
+        break
+    elif name == "_":
+        print("True")
+    elif name.isidentifier() == False or name.islower() == False or iskeyword(name) & name.find('_') > 1:
+        print("False")
+    else:
+        print("True")
+
+
