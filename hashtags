@@ -6,15 +6,20 @@ import string
 #
 # 'Should, I. subscribe? Yes!' -> #ShouldISubscribeYes
 
-
 user_words = input("Please input word(s): ")
 ln = len(user_words)
 print(ln)
 if ln < 140:
     user_words = user_words.title()
     for i in string.punctuation:
-        user_words = user_words.replace(i , '')
+        user_words = user_words.replace(i, '')
         user_words = user_words.replace(" ", '')
     print("#" + user_words)
 else:
     user_words = user_words[:140]
+    user_words = user_words.title()
+    for i in string.punctuation:
+        user_words = user_words.replace(i, '')
+        user_words = user_words.replace(" ", '')
+    print("#" + user_words)
+
