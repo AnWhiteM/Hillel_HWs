@@ -23,7 +23,7 @@ while True:
         break
     elif name == "_":
         print("True")
-    elif name.isidentifier() == False or name.islower() == False or iskeyword(name) & name.find('_') > 1:
+    elif name.isidentifier() == False or name.islower() == False or iskeyword(name) :
         print("False")
     else:
         print("True")
