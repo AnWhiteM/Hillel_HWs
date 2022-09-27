@@ -1,0 +1,8 @@
+digit = int(input("please input number: "))
+if digit > 0:
+    while digit > 10:
+        t = 1
+        for d in str(digit):
+            t *= int(d)
+        digit = int(t)
+print(digit)
