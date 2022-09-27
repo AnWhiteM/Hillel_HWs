@@ -1,0 +1,9 @@
+import string
+
+user_input = input("please input range (f.e.: a-c): ")
+letters = string.ascii_letters
+
+begin = letters.find(user_input[0])
+end = letters.find(user_input[-1]) + 1
+res = letters[begin: end]
+print(res)
