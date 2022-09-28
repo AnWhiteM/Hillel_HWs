@@ -1,0 +1,7 @@
+def correct_sentence(user_text):
+    user_text = user_text.capitalize()
+    if user_text[-1] != ".":
+        user_text = user_text + "."
+    print(user_text)
+
+correct_sentence("greetings, friends.")
