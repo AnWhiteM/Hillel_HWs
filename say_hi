@@ -1,0 +1,12 @@
+def say_hi(name, age):
+    if age < 0:
+        print("age can't be negative")
+    res = "Hi. My name is " + name + " and I " + str(age) + " years old"
+    print(res)
+
+
+
+say_hi("Frank", 68)
+
+
+
