@@ -3,11 +3,11 @@ def second_index(user_text, letter):
     if find_letter >= 0:
         second_text = user_text[find_letter + 1:]
     else:
-        return print("None")
+        return None
     index = second_text.find(letter)
     if index >= 0:
         res = find_letter + index + 1
         return print(res)
     else:
-        return print("None")
+        return None
 second_index("sims", "s")
