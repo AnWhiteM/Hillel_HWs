@@ -1,0 +1,14 @@
+def add_one(user_lst):
+    str_i = [str(i) for i in user_lst]
+    a_s = "".join(str_i)
+    lst_int = int(a_s)
+
+    lst_int = lst_int + 1
+
+    digit = str(lst_int)
+    digit_map = map(int, digit)
+    list_conv = list(digit_map)
+    return list_conv
+
+
+print(add_one([9,9,9]))
