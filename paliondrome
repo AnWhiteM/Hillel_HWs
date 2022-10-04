@@ -1,0 +1,26 @@
+import string
+
+def is_paliondrome(user_word):
+    punctuation = string.punctuation + " "
+    for s in punctuation:
+        user_word = user_word.replace(s , "")
+
+    user_word = user_word.lower()
+
+    reverse = ''
+    ln_word = len(user_word)
+    ln_rev = len(reverse)
+    len(reverse)
+    i = -1
+
+    while ln_rev < ln_word // 2:
+        reverse += user_word[i]
+        i -= 1
+
+    if user_word[:ln_word // 2] == reverse:
+        return True
+    else:
+        return False
+
+
+print(is_paliondrome('A man, a plan, a canal: Panama'))
