@@ -1,0 +1,12 @@
+def find_unique_number(lst):
+   n = 0
+   amount = {}
+   for i in lst:
+       amount[i] = lst.count(i)
+   n = min(amount, key = amount.get)
+   return float(n)
+
+
+
+print(find_unique_number([1, 2, 1, 1]))
+
