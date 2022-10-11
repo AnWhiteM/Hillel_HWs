@@ -1,0 +1,23 @@
+def difference (*user_numbers):
+
+    user_numbers = list(user_numbers)
+
+    k = 0
+    n = 0
+    if len(user_numbers) == 0:
+        return print("0")
+
+    for i in user_numbers:
+        if i is max(user_numbers):
+           k = k + i
+        if i is min(user_numbers):
+            n = n + i
+
+
+    result = k - n
+
+    return result
+
+
+print(difference())
+
