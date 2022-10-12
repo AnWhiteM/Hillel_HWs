@@ -1,0 +1,10 @@
+
+
+def is_even(num):
+    return (num & 1)
+
+num = 24945638940387**3
+if is_even(num) == 0:
+    print(True)
+else:
+    print(False)
