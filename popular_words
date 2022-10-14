@@ -1,0 +1,14 @@
+def popular_words(user_text, lst) :
+
+    user_text = user_text.lower().split()
+    res = {}
+    for x in lst:
+        res[x] = user_text.count(x)
+
+    return res
+
+
+
+
+
+print(popular_words('''When I was One I had just begun When I was Two I was nearly new ''', ['i', 'was', 'three', 'near']))
