@@ -1,0 +1,7 @@
+def generate_cube_numbers(lim):
+    start = 2
+    while start**3 <= lim:
+        yield start**3
+        start+=1
+
+print(list(generate_cube_numbers(10)))
