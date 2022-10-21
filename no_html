@@ -1,0 +1,27 @@
+import codecs
+
+def no_html(enter_file, out_file):
+    i = 0
+
+    enter_file = codecs.open("draft.html" , "r" , "UTF-8")
+    out_file = codecs.open("clean.txt", "w" , "UTF-8")
+    lst = list(enter_file.read())
+    while i < len(lst):
+        if lst[i] == "<":
+            while lst[i] != ">":
+                del lst[i]
+
+        i += 1
+    i = 0
+    while i < len(lst):
+        if lst[i] == ">":
+            del lst[i]
+        else:
+            i += 1
+
+    lst = ''.join(lst)
+    out_file.write(str(lst))
+    out_file.close()
+    enter_file.close()
+
+no_html("draft.html","clean.txt")
