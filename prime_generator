@@ -1,0 +1,26 @@
+import math
+
+def is_prime(num):
+    i = 2
+
+    while i < num // 2 + 1:
+        if num % i == 0:
+            return  False
+
+        i =  i + 1
+
+    return True
+
+def prime_generator(lim):
+    yield 2
+    n = 3
+    while n <= lim:
+        if is_prime(n):
+            yield n
+        n += 1
+
+print(list(prime_generator(15)))
+
+
+
+
