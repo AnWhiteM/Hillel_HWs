@@ -31,7 +31,7 @@ class Counter():
        return self.current
 
 counter = Counter()
-counter.set_max(10)
+counter.set_max(20)
 counter.set_current(7)
 counter.step_up()
 counter.step_up()
